@@ -1,7 +1,7 @@
 public class SmartTv {
-    boolean ligada = false;
-    int canal = 1;
-    int volume = 10;
+    private boolean ligada = false;
+    private int canal = 1;
+    private int volume = 10;
 
     public void ligar() {
         this.ligada = true;
@@ -35,5 +35,17 @@ public class SmartTv {
 
     public void mudarCanal(int canal) {
         this.canal = canal;
+    }
+
+    public boolean isLigada() {
+        return this.ligada;
+    }
+
+    public int getCanal() {
+        return this.canal;
+    }
+
+    public int getVolume() {
+        return this.volume;
     }
 }
